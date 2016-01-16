@@ -23,7 +23,6 @@ class BaseGistView(object):
 
         # Get options settings of this view
         self.options = self.view.settings().get("options")
-        print (self.options)
         if not self.options: 
             return False
 
