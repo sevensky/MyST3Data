@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.2",
+  "searchengines": [
+    {
+      "baseurl": "www.google.com",
+      "name": "Google",
+      "searchurl": "http://www.google.com/search?q={0}"
+    },
+    {
+      "baseurl": "gist.github.com",
+      "name": "Gist",
+      "searchurl": "https://gist.github.com/search?q=win32{0}"
+    },
+    {
+      "baseurl": "www.stackoverflow.com",
+      "name": "Stack Overflow",
+      "searchurl": "http://stackoverflow.com/search?tab=relevance&q={0}"
+    },
+    {
+      "baseurl": "code.openhub.net",
+      "name": "openhub",
+      "searchurl": "http://code.openhub.net/search?s={0}"
+    },
+    {
+      "baseurl": "github.com",
+      "name": "githubCode",
+      "searchurl": "https://github.com/search?q={0}&ref=opensearch&type=Code"
+    },
+    {
+      "baseurl": "docs.python.org",
+      "name": "python2",
+      "searchurl": "https://docs.python.org/2/search.html?q={0}&check_keywords=yes"
+    },
+    {
+      "baseurl": "docs.python.org",
+      "name": "python3",
+      "searchurl": "https://docs.python.org/3/search.html?q={0}&check_keywords=yes"
+    },
+    {
+      "baseurl": "www.php.net",
+      "name": "PHP",
+      "searchurl": "http://ca3.php.net/manual-lookup.php?pattern={0}&scope=quickref"
+    },
+    {
+      "baseurl": "reference.sitepoint.com",
+      "name": "sitepoint",
+      "searchurl": "http://reference.sitepoint.com/html/{0}"
+    },
+    {
+      "baseurl": "caniuse.com",
+      "name": "When can I use...",
+      "searchurl": "http://caniuse.com/#search={0}"
+    },
+    {
+      "baseurl": "developer.mozilla.org",
+      "name": "Mozilla Developer Network",
+      "searchurl": "https://developer.mozilla.org/en-US/search?q={0}"
+    },
+    {
+      "baseurl": "api.rubyonrails.org",
+      "name": "Ruby on Rails",
+      "searchurl": "http://api.rubyonrails.org/?q={0}"
+    },
+    {
+      "baseurl": "www.ruby-doc.org",
+      "name": "Ruby Doc",
+      "searchurl": "http://www.ruby-doc.org/search.html?cx=011815814100681837392%3Awnccv6st5qk&q={0}&sa=Search&cof=FORID%3A9"
+    }
+  ]
+}

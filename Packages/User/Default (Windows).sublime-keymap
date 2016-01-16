@@ -1,0 +1,186 @@
+[ 
+  //ipython 
+    { 
+      "keys": ["f9"], 
+      "command": "repl_open",
+      "caption": "Python - IPython",
+      "id": "repl_python_ipython",
+      "mnemonic": "p",
+      "args": {
+          "type": "subprocess",
+          "encoding": "utf8",
+          "autocomplete_server": true,
+          "cmd": {
+              "osx": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"],
+              "linux": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"],
+              "windows": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"]
+          },
+          "cwd": "$file_path",
+          "syntax": "Packages/Python/Python.tmLanguage",
+          "external_id": "python",
+          "extend_env": {
+              "PYTHONIOENCODING": "utf-8",
+              "SUBLIMEREPL_EDITOR": "$editor"
+          }
+      }
+    },
+
+  //命令行
+  { "keys": ["alt+`"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+  //合并行
+  { "keys": ["ctrl+shift+j"], "command": "join_lines" },
+ 
+  //光标左右移动(字符级别)
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "characters", "forward": true} },
+  //alt+space 光标右移
+  { "keys": ["alt+d"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+  { "keys": ["alt+space"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+  //alt+space 光标左移
+  { "keys": ["alt+a"], "command": "move", "args": {"by": "word_ends", "forward": false} },
+  { "keys": ["shift+alt+space"], "command": "move", "args": {"by": "word_ends", "forward": false} },
+  //光标上移
+  { "keys": ["alt+w"], "command": "move", "args": {"by": "lines", "forward": false} } ,
+  { "keys": ["alt+i"], "command": "move", "args": {"by": "lines", "forward": false} } ,
+  { "keys": ["shift+alt+enter"], "command": "move", "args": {"by": "lines", "forward": false} } ,
+  //光标下移
+  { "keys": ["alt+s"], "command": "move", "args": {"by": "lines", "forward": true} },
+  { "keys": ["alt+enter"], "command": "move", "args": {"by": "lines", "forward": true} },
+  //上下翻
+  { "keys": ["ctrl+alt+w"], "command": "move", "args": {"by": "pages", "forward": false} },
+  { "keys": ["ctrl+alt+s"], "command": "move", "args": {"by": "pages", "forward": true} },
+
+
+  // 移动上下行
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+ 
+  //调用Conemu  文件 alt+r  目录shift+alt+r
+  {
+    "caption": "Run: ConEmu64 Python",
+    "keys": ["alt+r"], 
+    "command": "runapp",
+    "args":{
+        "app": "D:\\PortableApps\\cmder_mini\\vendor\\conemu-maximus5\\ConEmu64.exe",
+        "args": 
+          ["-dir $DIR$ /cmd cmd /k  \"%ConEmuDir%\\..\\init.bat & activate.bat dev & ConEmuC -GuiMacro paste(2,\"Python $FILENAME$\");Keys(\"Enter\")\" " ]
+        ,
+        "type": "none"
+    }
+  },
+  {
+    "caption": "Run: ConEmu64 Dir",
+    "keys": ["shift+alt+r"], 
+    "command": "runapp",
+    "args":{
+        "app": "D:\\PortableApps\\cmder_mini\\vendor\\conemu-maximus5\\ConEmu64.exe",
+        "args": ["-dir $DIR$ /cmd cmd /k  \"%ConEmuDir%\\..\\init.bat & activate.bat dev & ConEmuC -GuiMacro print Python"] , 
+        "type": "none"
+    }
+  },
+
+
+  // sidebar 开关
+  { "keys": ["alt+c"], "command": "toggle_side_bar" },
+  //TAB选择
+  { "keys": ["alt+x"], "command": "extended_switcher", "args": {"list_mode": "window"} },
+  
+  //查找重定义
+  { "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+  { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+  { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["ctrl+;"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+  //查找重定义
+  // python breakpoints
+  //{ "keys": [], "command": "clear_all_breakpoints" },
+  { "keys": ["ctrl+shift+b"], "command": "toggle_breakpoint" },
+  { "keys": ["ctrl+shift+g"], "command": "goto_breakpoint" },
+  // python breakpoints
+
+  //复制文件路径
+  { "keys": ["ctrl+shift+c"], "command": "copy_path" },
+  //
+  { "keys": ["ctrl+alt+space"], "command": "auto_complete" },
+  { "keys": ["ctrl+alt+space"], "command": "replace_completion_with_auto_complete", "context":
+    [
+      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+      { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+  // sidebar 配置
+  { 
+    "keys": ["alt+f2"], 
+    "command": "side_bar_files_open_with",
+    "args": {
+      "paths": [],
+      // "application": "C:\\Users\\Mr.DenGo\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+      "application": "E:\\360安全浏览器\\360se6\\Application\\360se.exe",
+      "extensions":".*"
+    }
+  },
+  { 
+    "keys": ["ctrl+f2"],
+    "command": "side_bar_files_open_with",
+    "args": {
+    "paths": [],
+    "application": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+    "extensions":".*"
+    }
+  },
+
+  // Anaconda
+  {"command": "anaconda_goto", "keys": ["f4"]},
+  {"command": "anaconda_find_usages", "keys": ["ctrl+alt+f"]},
+  {"command": "anaconda_doc", "keys": ["f3"]},
+  //格式化代码
+  {"command": "anaconda_auto_format", "keys": ["ctrl+alt+r"]},
+  {"command": "anaconda_goto", "keys": ["g", "d"],
+      "context":
+      [
+          { "key": "selector", "operator": "equal", "operand": "source.python" },
+          { "key": "setting.command_mode", "operand": true },
+          { "key": "setting.is_widget", "operand": false }
+      ]
+  },
+
+  { "keys": ["f11"], "command": "toggle_full_screen" },
+  // advanced new file
+  { "keys": ["super+n"], "command": "advanced_new_file_new"},
+  // Copy file name
+  {
+    "keys": ["super+shift+c"],
+    "command": "copy_path_to_clipboard"
+  } ,
+  { "keys": ["ctrl+shift+alt+t"], "command": "open_terminal_project_folder" },
+ 
+
+ //omni_markup_preview
+    {
+        "keys": ["ctrl+alt+o"], "command": "omni_markup_preview",
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    },
+    {
+        "keys": ["ctrl+alt+x"], "command": "omni_markup_export",
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    },
+    {
+        "keys": ["ctrl+alt+c"], "command": "omni_markup_export",
+        "args": { "clipboard_only": true },
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    },
+    //分屏
+    {
+      "keys": ["alt+shift+2"],
+      "command": "set_layout",
+      "args":{"cols": [0.0, 1.0], "rows": [0.0, 0.7, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]] } 
+    },
+    {
+      "keys": ["alt+shift+8"],
+      "command": "set_layout",
+      "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] }
+    },
+    
+
+ ]

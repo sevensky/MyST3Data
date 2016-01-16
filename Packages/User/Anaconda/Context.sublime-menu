@@ -1,0 +1,64 @@
+[	
+   
+    {
+        "caption": "Anaconda",
+        "id": "anaconda_context",
+        "children":
+        [
+            {
+                "command": "anaconda_goto",
+                "caption": "定义"
+            },
+            {
+                "command": "anaconda_doc",
+                "caption": "文档"
+            },
+            {
+                "command": "anaconda_find_usages",
+                "caption": "查找引用"
+		
+            },
+            {
+                "command": "anaconda_rename",
+                "caption": "光标处重命名"
+            },
+            {
+                "command": "anaconda_get_lines",
+                "caption": "Show error list"
+            },
+            {
+                "command": "anaconda_next_lint_error",
+                "caption": "Next lint error"
+            },
+            {
+                "command": "anaconda_auto_format",
+                "caption": "Autoformat PEP8 Errors"
+            },
+            {
+                "command": "anaconda_mc_cabe",
+                "caption": "McCabe complexity复杂度 check"
+            },
+            {
+                "command": "anaconda_auto_import",
+                "caption": "Auto import undefined word under cursor"
+            },
+            {
+                "command": "anaconda_run_current_file_tests",
+                "caption": "Run tests on current file"
+            },
+            {
+                "command": "anaconda_run_project_tests",
+                "caption": "Run full project tests= suite",
+            },
+            {
+                "command": "anaconda_run_current_test",
+                "caption": "Run test under the cursor",
+            },
+            {
+                "command": "anaconda_run_last_test",
+                "caption": "重复Repeat last test run"
+            }
+        ]
+    },
+
+]

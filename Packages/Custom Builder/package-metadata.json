@@ -1,0 +1,1 @@
+{"version": "0.2.0", "sublime_text": "*", "dependencies": [], "url": "https://github.com/sneakypete81/sublime_custom_builder", "platforms": ["*"], "description": "Sublime Text plugin to launch customisable build commands"}

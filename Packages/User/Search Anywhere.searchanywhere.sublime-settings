@@ -1,0 +1,17 @@
+{
+	"searchanywhere_searchengine": "Google",
+	"searchanywhere_searchurl": "http://www.google.com/search?q={0}",
+	"searchanywhere_type_searchengine":
+	[
+		{
+			"extension": ".py",
+			"name": "Google",
+			"searchurl": "http://www.google.com/search?q={0}"
+		},
+		{
+			"extension": ".py",
+			"name": "Stack Overflow",
+			"searchurl": "http://stackoverflow.com/search?tab=relevance&q={0}"
+		}
+	]
+}

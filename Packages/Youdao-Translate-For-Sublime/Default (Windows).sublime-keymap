@@ -1,0 +1,9 @@
+[
+	{
+		"caption": "译",
+        "id": "youdao_translate", 
+        "command": "youdao_translate" , 
+        "keys": ["ctrl+shift+t"],
+	}
+
+]

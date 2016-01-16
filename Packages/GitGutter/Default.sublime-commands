@@ -1,0 +1,26 @@
+[
+    {
+        "caption": "GitGutter: Show Comparing Against显示当前基点",
+        "command": "git_gutter_show_compare"
+    },
+    {
+        "caption": "GitGutter: 与 HEAD 对比",
+        "command": "git_gutter_compare_head"
+    },
+    {
+        "caption": "GitGutter: 与 Origin 对比",
+        "command": "git_gutter_compare_origin"
+    },
+    {
+        "caption": "GitGutter: 与 Commit 对比",
+        "command": "git_gutter_compare_commit"
+    },
+    {
+        "caption": "GitGutter: 与 Branch 对比",
+        "command": "git_gutter_compare_branch"
+    },
+    {
+        "caption": "GitGutter: 与 Tag 对比",
+        "command": "git_gutter_compare_tag"
+    }
+]

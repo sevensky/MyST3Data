@@ -1,0 +1,18 @@
+[
+	{ "caption": "同步滚动(S)" ,"command": "toggle_sync_scroll", "mnemonic": "S" } ,
+	{"caption": "选择折叠","command": "fold"},
+	{"caption": "选择展开","command": "unfold"},
+	// {"caption": "Code Folding: Refold","command": "buffer_scroll_re_fold"},
+	// {"caption": "Code Folding: Select Folded","command": "buffer_scroll_fold_select_folded"},
+	// {"caption": "Code Folding: Select Unfolded","command": "buffer_scroll_fold_select_unfolded"} ,
+	{"caption": "Terminality: Browse Commands...","command": "terminality"},
+	{
+	    "caption": "Run: ConEmu64 Python dev(R)", "mnemonic": "R" ,
+	    "command": "runapp",
+	    "args":{
+	        "app": "D:\\PortableApps\\cmder_mini\\vendor\\conemu-maximus5\\ConEmu64.exe",
+	        "args": ["-dir $DIR$ /cmd cmd /k  \"%ConEmuDir%\\..\\init.bat & activate.bat dev & ConEmuC -GuiMacro:0 paste(2,\"Python $FILENAME$\");Keys(\"Enter\")\" "] ,
+	        "type": "none"
+	    }
+	}
+]

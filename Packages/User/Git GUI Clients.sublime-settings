@@ -1,0 +1,22 @@
+{
+  
+  "sourcetree": [
+    // "/usr/local/bin/stree"
+    "E:\\Program Files (x86)\\SourceTree\\SourceTree.exe"
+  ],
+  "gitk": [
+    // "/usr/local/git/bin/gitk",
+    "E:\\Program Files\\Git\\cmd\\gitk.exe",
+  ],
+  // "gitx": [
+  //   "/usr/bin/gitx",
+  //   "/usr/local/bin/gitx"
+  // ],
+  // "gitextensions": [
+  //   "C:\\Program Files\\GitExtensions\\GitExtensions.exe",
+  //   "C:\\Program Files (x86)\\GitExtensions\\GitExtensions.exe"
+  // ],
+  // "gitg": [
+  //   "/usr/bin/gitg"
+  // ],
+  }

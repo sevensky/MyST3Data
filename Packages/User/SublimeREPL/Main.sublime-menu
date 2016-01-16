@@ -1,0 +1,99 @@
+[
+   {
+        "caption": "SublimeREPL(R)",
+        "mnemonic": "R",
+        "id": "SublimeREPL",
+        "children":[
+                    { 
+                      "id": "repl_open-devs",
+                      "command": "repl_open", 
+                      "caption": "repl_open-dev",
+                      "mnemonic": "p",
+                      "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["F:/Anaconda2/envs/dev/python", "-i", "-u", "$file"],
+                        "env":
+                        {
+                            // "PATH": "E:/1GitHub/Python/amyproj1;E:/1GitHub/Python.DataYes/trade/AlgoTrading/AlgoTrading",
+                            // "PYTHONPATH": "E:/1GitHub/Python/amyproj1;E:/1GitHub/Python.DataYes/trade/AlgoTrading/AlgoTrading",
+                        },
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python"
+                      }
+                    },
+                    
+                    {"command": "repl_open",
+                     "caption": "Python",
+                     "id": "repl_python",
+                     "mnemonic": "P",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["python", "-i", "-u"],
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"}
+                        }
+                    },
+                    //Data\Packages\SublimeREPL\config\Python\Default.sublime-commands
+                    {
+                        "caption": "Python - virtualenv",
+                        "command": "python_virtualenv_repl",
+                        "id": "python_virtualenv_repl",
+                    },
+                    {"command": "repl_open",
+                     "caption": "Python - PDB current file",
+                     "id": "repl_python_pdb",
+                     "mnemonic": "D",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["python", "-i", "-u", "-m", "pdb", "$file_basename"],
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"}
+                        }
+                    },
+                    {"command": "repl_open",
+                     "caption": "Python - RUN current file",
+                     "id": "repl_python_run",
+                     "mnemonic": "R",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "cmd": ["python", "-u", "$file_basename"],
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python",
+                        "extend_env": {"PYTHONIOENCODING": "utf-8"}
+                        }
+                    },
+                    {"command": "repl_open",
+                     "caption": "Python - IPython",
+                     "id": "repl_python_ipython",
+                     "mnemonic": "I",
+                     "args": {
+                        "type": "subprocess",
+                        "encoding": "utf8",
+                        "autocomplete_server": true,
+                        "cmd": {
+                            "osx": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"],
+                            "linux": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"],
+                            "windows": ["python", "-u", "${packages}/SublimeREPL/config/Python/ipy_repl.py"]
+                        },
+                        "cwd": "$file_path",
+                        "syntax": "Packages/Python/Python.tmLanguage",
+                        "external_id": "python",
+                        "extend_env": {
+                            "PYTHONIOENCODING": "utf-8",
+                            "SUBLIMEREPL_EDITOR": "$editor"
+                        }
+                    }
+                }
+            ]
+    }
+]

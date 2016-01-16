@@ -1,0 +1,62 @@
+[
+	{
+		"caption": "-",
+		"id": "side-bar-start-separator"
+	},
+    {
+        "caption": "新文件(Tmpl)",
+        "children":
+        [
+            
+            {
+                "caption": "python",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "python"
+                }
+            },
+            {
+                "caption": "HTML",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "html"
+                }
+            },
+            {
+                "caption": "Javascript",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "js"
+                }
+            },
+            {
+                "caption": "CSS",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "css"
+                }
+            },
+            {
+                "caption": "PHP",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "php"
+                }
+            },
+            {
+                "caption": "ruby",
+                "command": "sublime_tmpl",
+                "args": {
+                    "type": "ruby"
+                }
+            },
+            {"caption": "-"},
+            {
+                "command": "open_file",
+                "args": {"file": "${packages}/SublimeTmpl/Main.sublime-menu"},
+                "caption": "Menu"
+            }
+        ]
+    }
+      
+]

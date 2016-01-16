@@ -1,0 +1,151 @@
+[
+
+    { "caption": "-", "id": "anaconda_context" },
+    { "caption": "-", "id": "sublimelinter" },
+    
+    { "command": "copy", "caption": "复制" },
+    { "command": "cut", "caption": "剪切" },
+    { "command": "paste", "caption": "粘贴" },
+    { "caption": "-", "id": "selection" },
+    { "command": "select_all", "caption": "全选" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_in_browser", "caption": "在浏览器中打开" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "打开所在的文件夹..." },
+    { "command": "copy_path", "caption": "复制文件路径" },
+    { "command": "reveal_in_side_bar", "caption": "在侧边栏显示" },
+    { "caption": "-", "id": "end" },
+    {
+        "caption": "配置文件(F)",
+        "mnemonic": "F",
+        "id": "file",
+        "children":
+        [   
+            { 
+                "caption": "标签栏",
+                "mnemonic": "",
+                "children":
+                [
+                    {
+                        "command": "open_file" ,
+                        "caption": "标签栏-系统(X)",
+                        "mnemonic": "X",
+                        "args":{"file": "${packages}/Default/Tab Context.sublime-menu"}
+                    },
+                    {
+                        "command": "open_file" ,
+                        "caption": "标签栏-用户(U)", 
+                        "mnemonic": "U",
+                        "args":{"file": "${packages}/User/Tab Context.sublime-menu"}
+                    }
+                ]
+            },
+            { 
+                "caption": "鼠标(M)",
+                "mnemonic": "M",
+                "children":
+                [
+                    {
+                        "command": "open_file" ,
+                        "caption": "鼠标-系统(X)",
+                        "mnemonic": "X",
+                        "args":{"file": "${packages}/Default/Default ($platform).sublime-mousemap"}
+                    },
+                    {
+                        "command": "open_file" ,
+                        "caption": "鼠标-用户(U)", 
+                        "mnemonic": "U",
+                        "args":{"file": "${packages}/User/Default ($platform).sublime-mousemap"}
+                    }
+                ]
+            },
+            { 
+                "caption": "按键绑定(A)",
+                "mnemonic": "A",
+                "children":
+                [
+                    {
+                        "command": "open_file" ,
+                        "caption": "按键-系统(X)",
+                        "mnemonic": "X",
+                        "args":{"file": "${packages}/Default/Default ($platform).sublime-keymap"}
+                    },
+                    {
+                        "command": "open_file" ,
+                        "caption": "按键-用户(U)", 
+                        "mnemonic": "U",
+                        "args":{"file": "${packages}/User/Default ($platform).sublime-keymap"}
+                    },
+                    {
+                        "command": "open_file" ,
+                        "caption": "按键-SublimeREPL(R)", 
+                        "mnemonic": "R",
+                        "args":{"file": "${packages}/User/SublimeREPL/Default ($platform).sublime-keymap"}
+                    },
+
+                    
+                ]
+            },
+            { 
+                "caption": "Command(C)",
+                "mnemonic": "C",
+                "children":
+                [
+                    {
+                        "command": "edit_command_palette_open_file" ,
+                        "caption": "command-系统(X)",
+                        "mnemonic": "X",
+                        "args":{"file": "${packages}/Default/Default.sublime-commands"}
+                    },
+                    {
+                        "command": "edit_command_palette_open_user" ,
+                        "caption": "command-用户(U)", 
+                        "mnemonic": "U",
+                    },
+                    {
+                        "command": "edit_command_palette_open_file", 
+                        "caption": "command-SublimeREPL(R)",
+                        "mnemonic": "R",
+                        "args":{"file": "${packages}/User/SublimeREPL/Default.sublime-commands",},
+                    },
+                ]
+            },
+            { 
+                "caption": "工具栏(T)",
+                "mnemonic": "T",
+                "children":
+                [
+                    {
+                        "command": "open_file", 
+                        "args":{"file": "${packages}/Default/Main.sublime-menu",},
+                        "caption": "工具栏-系统(X)",
+                        "mnemonic": "X",
+                    },
+                    {
+                        "command": "open_file", "args":{"file": "${packages}/User/Main.sublime-menu",},
+                        "caption": "工具栏-用户(U)",
+                        "mnemonic": "U",
+                    },
+                    {
+                        "command": "open_file" ,
+                        "caption": "工具栏-SublimeREPL(R)", 
+                        "mnemonic": "R",
+                        "args":{"file": "${packages}/User/SublimeREPL/Main.sublime-menu"}
+                    },
+
+                ]
+            },
+
+            {
+                "caption": "右键菜单(K)",
+                "mnemonic": "K",
+                "id": "file",
+                "children":[
+                    {"command": "open_file", "args":{"file": "${packages}/User/Context.sublime-menu",},"caption": "右键菜单-用户(Y)","mnemonic": "Y"},
+                    {"command": "open_file", "args":{"file": "${packages}/User/SublimeLinter/Context.sublime-menu",},"caption": "右键菜单-SublimeLinter(L)","mnemonic": "L"},
+                    {"command": "open_file", "args":{"file": "${packages}/User/Anaconda/Context.sublime-menu",},"caption": "右键菜单-Anaconda(A)","mnemonic": "A"},
+                    {"command": "open_file", "args":{"file": "${packages}/User/SublimeREPL/Context.sublime-menu",},"caption": "右键菜单-SublimeREPL(R)","mnemonic": "R"},
+                ]
+            },
+        ]
+    },
+]

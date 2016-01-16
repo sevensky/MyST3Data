@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+e"], "command": "extended_switcher", "args": {"list_mode": "window"} },
+    { "keys": ["ctrl+alt+e"], "command": "extended_switcher", "args": {"list_mode": "active_group"} }
+]
+	

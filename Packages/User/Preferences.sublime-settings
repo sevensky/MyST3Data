@@ -1,0 +1,116 @@
+{
+	"animation_enabled": false,
+	"auto_complete": true,
+	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python"
+		}
+	],
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.rar",
+		"*.pptx"
+	],
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Seti (SublimePythonIDE).tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"enable_telemetry": "false",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_face": "YaHei Consolas Hybrid",
+	"font_size": 13,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"ActionScript",
+		"AdvancedNewFile",
+		"AppleScript",
+		"ASP",
+		"C#",
+		"Clojure",
+		"Djaneiro",
+		"Emmet",
+		"Erlang",
+		"FuzzyFilePath",
+		"GitGutter",
+		"Go",
+		"Groovy",
+		"Haskell",
+		"Lisp",
+		"Objective-C",
+		"OmniMarkupPreviewer",
+		"Perl",
+		"Plugin Debugger",
+		"Rails",
+		"Ruby",
+		"Scala",
+		"SublimeCodeIntel",
+		"SublimeLinter-flake8",
+		"SublimeLinter-pep257",
+		"SublimeLinter-pep8",
+		"Sublimerge Pro",
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"E:\\1GitHub\\Python\\pyautogui*",
+		"E:\\1GitHub\\Python\\1firstRead*",
+		"E:\\1GitHub\\Python.DataYes*",
+		"*.log"
+	],
+	"index_files": false,
+	"preview_on_click": true,
+	"save_on_focus_lost": false,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"show_panel_on_build": true,
+	"theme": "Seti.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
+	"word_wrap": "true"
+}

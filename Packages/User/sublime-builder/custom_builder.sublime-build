@@ -1,0 +1,8 @@
+{
+	//Custom Builder.sublime-settings
+	"target": "custom_builder_prompt",
+	"selector": "source.python",
+	"cmd": {"file": "$file"},
+	"shell": true,
+	"encoding": "cp936",
+}

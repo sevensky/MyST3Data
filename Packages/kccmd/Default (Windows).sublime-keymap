@@ -1,0 +1,7 @@
+[
+	// {"keys": ["ctrl+shift+c"], "command": "shell_prompt"},
+	// {"keys": ["ctrl+shift+x"], "command": "shell_prompt", "args": { "run_previous": true } },
+	// {"keys": ["shift+ctrl+alt+c"], "command": "subprocess_in_cwd", "args": {
+	// 	"cmd": ["cmd.exe"]
+	// } }
+]

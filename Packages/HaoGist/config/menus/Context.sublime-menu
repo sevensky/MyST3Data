@@ -1,0 +1,95 @@
+[
+    { "caption": "-" },
+    {
+        "caption": "HaoGist",
+        "children":
+        [
+            {"caption": "Open Gist From Cache", "command": "choose_gist", 
+                "args": {
+                    "callback_command": "open_gist"
+                }
+            },
+
+            {"caption": "Open Gist From Server", "command": "choose_gist", 
+                "args": {
+                    "read_cache": false,
+                    "callback_command": "open_gist"
+                }
+            },
+
+            {"caption": "-"},
+
+            {"caption": "Add File To Gist", "command": "choose_gist", 
+                "args": {
+                    "callback_command": "add_file_to_gist",
+                    "include_files": false
+                }
+            },
+
+            {"caption": "Update To Gist", "command": "choose_gist", 
+                "args": {
+                    "callback_command": "update_content_to_gist"
+                }
+            },
+
+            {"caption": "Delete Exist Gist", "command": "choose_gist", 
+                "args": {
+                    "callback_command": "delete_exist_gist"
+                }
+            },
+
+            {"caption": "Delete File From Gist", "command": "choose_gist", 
+                "args": {
+                    "include_files": false,
+                    "callback_command": "delete_file_from_gist"
+                }
+            },
+
+            {"caption": "Open Gist in Browser", "command": "choose_gist", 
+                "args": {
+                    "callback_command": "open_gist_in_browser"
+                }
+            },
+
+            {"caption": "-"},
+
+            {"caption": "Create Public Gist", "command": "create_gist", "args": {"public": true}},
+            {"caption": "Create Private Gist", "command": "create_gist", "args": {"public": false}},
+
+            {"caption": "-"},
+
+            {"caption": "Update Gist", "command": "update_gist"},
+            {"caption": "Refresh Gist", "command": "refresh_gist"},
+            {"caption": "Rename Gist", "command": "rename_gist"},
+            {"caption": "Delete Gist", "command": "delete_gist"},
+            {"caption": "Update Gist Description", "command": "update_gist_description"},
+            {"caption": "Open Gist in Browser", "command": "open_current_gist_in_browser"},
+            
+            {"caption": "-"},
+
+            {"caption": "Clear Gist Cache", "command": "clear_gist_cache"},
+            {"caption": "Reload Gist Cache", "command": "choose_gist", "args": {"read_cache": false}},
+            
+            {"caption": "-"},
+
+            {"caption": "Settings", "children": [
+                {"caption": "Settings – Default", "command": "open_file", 
+                    "args": {
+                        "file": "${packages}/HaoGist/config/settings/HaoGist.sublime-settings"
+                    }
+                },
+                {"caption": "Settings – User", "command": "open_file", 
+                    "args": {
+                        "file": "${packages}/User/HaoGist.sublime-settings"
+                    }
+                }
+            ]},
+
+            {"caption": "-"},
+            
+            {"caption": "Release Note", "command": "release_note"},
+
+            {"caption": "About", "command": "about_hao_gist"},
+        ]
+    }
+]

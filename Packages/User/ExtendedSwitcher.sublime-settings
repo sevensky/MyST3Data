@@ -1,0 +1,6 @@
+[
+	//已打开标签导航
+    { "keys": ["ctrl+e"], "command": "extended_switcher", "args": {"list_mode": "window"} },
+    { "keys": ["ctrl+alt+e"], "command": "extended_switcher", "args": {"list_mode": "active_group"} }
+]
+	

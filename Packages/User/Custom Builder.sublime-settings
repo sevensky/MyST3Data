@@ -1,0 +1,14 @@
+{
+	"commands":
+	[
+		
+		{
+			"command": "set pythonPATH=E:\\1GitHub\\Python\\amyproj1\\&F:/Anaconda2/envs/dev/python.exe -u \"$file\" ",
+			"title": "dev python"
+		},
+		{
+			"command": "ipconfig",
+			"title": "ipconfig"
+		}
+	]
+}

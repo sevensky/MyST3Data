@@ -1,0 +1,27 @@
+{
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
+	"caret_extra_width": 2,
+	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"ASP",
+		"Clojure",
+		"Erlang",
+		"Go",
+		"Groovy",
+		"Haskell",
+		"Nil-Theme",
+		"Perl",
+		"Python Breakpoints",
+		"Rails",
+		"Ruby",
+		"Vintage"
+	],
+	"overlay_scroll_bars": "enabled",
+	"theme": "Seti.sublime-theme",
+	"update_check": false,
+	"word_wrap": "auto"
+}

@@ -1,0 +1,5 @@
+[	
+	{ "caption": "-", "id": "start" },
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "从项目中移除文件夹", "id": "remove_folder" ,"command": "remove_folder", "args": { "dirs": []} }
+]

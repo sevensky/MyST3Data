@@ -1,0 +1,77 @@
+[
+  // ConEmuC -GuiMacro:0             paste(2,"' + quoted + '\\n")'
+  // ConEmuC -GuiMacro:0 Keys("Up"); paste(2,"\\n")
+  // ConEmuC -GuiMacro:0 print: something
+  // ConEmuC -GuiMacro:0 paste(2,"jjj")
+  // ConEmuC -GuiMacro print abc ; print def
+  {
+    "caption": "Run: ConEmu64 Python",
+    "command": "runapp",
+    "args":{
+        "app": "D:\\PortableApps\\cmder_mini\\vendor\\conemu-maximus5\\ConEmu64.exe",
+        "args":
+          [
+          "-dir $DIR$ /cmd cmd /k  \"%ConEmuDir%\\..\\init.bat & activate.bat dev & ConEmuC -GuiMacro:0 paste(2,\"Python $FILENAME$\");Keys(\"Enter\")\" " 
+          ]
+        ,
+        "type": "none"
+    }
+  }, 
+  {
+    "caption": "Run: ConEmu64 Dir",
+    "command": "runapp",
+    "args":{
+        "app": "D:\\PortableApps\\cmder_mini\\vendor\\conemu-maximus5\\ConEmu64.exe",
+        "args": 
+          [
+          "-dir $DIR$ /cmd cmd /k  \"%ConEmuDir%\\..\\init.bat & F:\\Anaconda2\\Scripts\\activate.bat  dev" 
+          ]
+        ,
+        "type": "none"
+    }
+  }, 
+
+  // {
+  //   "caption": "Run: Git",
+  //   "command": "runapp",
+  //   "args":{
+  //       "app": "D:\\Tools\\Git\\git-bash.exe",
+  //       "args": ["--cd=$DIR$"],
+  //       "type": "none"
+  //   }
+  // },
+  // {
+  //   "caption": "Run: Chrome",
+  //   "command": "runapp",
+  //   "args":{
+  //       "app": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  //       "args": [],
+  //       "type": "file"
+  //   }
+  // },
+  // {
+  //   "caption": "Run: example",  
+  //   "command": "runapp",
+  //   "args":{
+  //     "app": "",//full path on Win/Linux, or only name on MAC
+  //     // argument list
+  //     // variables can be use: $DIR$, $FILE$, $PROJ$
+  //     "args": [""],
+  //     // define what should follow the command:
+  //     // "dir" - file directory, same as $DIR$
+  //     // "file" - file name, same as $FILE$
+  //     // "proj" - project directory, same as $PROJ$
+  //     // "none" - nothing: if args use variables, "type" must be "none"
+  //     "type": ""
+  //   }
+  // },
+  // {
+  //   "caption": "Run: zzz",
+  //   "command": "runapp",
+  //   "args":{
+  //     "app": "C:\\Windows\\system32\\wscript",
+  //     "args": ["D:\\Tools\\Git\\Git Bash.vbs"],
+  //     "type": "proj"
+  //   }
+  // }
+]

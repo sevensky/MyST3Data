@@ -1,0 +1,87 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+			{
+				"caption": "Foxit Reader",
+				"id": "side-bar-files-open-with-pdf",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [""],
+					"application": "D:\\Program Files\\PDF\\Foxit Reader.exe",
+					"extensions":"pdf",  //any file with these extensions
+					"args":[]
+				},
+				"open_automatically" : true // will close the view/tab and launch the application
+			},
+			{
+				"caption": "PyCharm5.0.3",
+				"id": "side-bar-files-open-with-PyCharm",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [""],
+					"application": "E:\\Program Files (x86)\\JetBrains\\PyCharm 5.0.3\\bin\\PyCharm.exe",
+					"extensions":"py|py3",  //any file with these extensions
+					"args":[]
+				},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			{
+				"caption": "BCompare",
+				"id": "side-bar-files-open-with-BCompare",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [""],
+					"application": "D:\\Program Files\\Beyond Compare 4\\BCompare.exe",
+					"extensions":"py|py3",  //any file with these extensions
+					"args":[]
+				},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			//application 1
+			{
+				"caption": "Photoshop1",
+				"id": "side-bar-files-open-with-photoshop",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "Adobe Photoshop CS5.app", // OSX
+					"extensions":"psd|png|jpg|jpeg",  //any file with these extensions
+					"args":[]
+				},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			//separator
+			{"caption":"-"},
+			//application 2
+			{
+				"caption": "SeaMonkey1",
+				"id": "side-bar-files-open-with-seamonkey",
+				"command": "side_bar_files_open_with",
+				"args": {
+					"paths": [],
+					"application": "C:\\Archivos de programa\\SeaMonkey\\seamonkey.exe", // WINNT
+					"extensions":"", //open all even folders
+					"args":[]
+				},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			//application n
+			{
+				"caption": "Chrome",
+				"id": "side-bar-files-open-with-chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+							"paths": [],
+							"application": "C:\\Documents and Settings\\tito\\local\\Datos de programa\\Google\\Chrome\\Application\\chrome.exe",
+							"extensions":".*", //any file with extension
+							"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+
+			{"caption":"-"}
+		]
+	}
+]

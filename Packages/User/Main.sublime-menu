@@ -1,0 +1,124 @@
+/*
+    command 属性必须是ST内部指令和所有插件的PY程序中的以
+    sublime_plugin.TextCommand或sublime_plugin.WindowCommand作参数的类名称，
+    写法有分别，在
+    PY中使用驼峰式写法，如ZhaoLiang，
+    菜单和 sublime-commands 文件里的command属性值要写成毛毛虫式，如zhao_liang。
+    查看所有PY脚本有点麻烦，一个简单方法就是查看Default和其它插件包里的 Default.sublime-commands 文件里注册的命令。ST插件虽不硬性要求，但提倡把脚本中的命令都在 sublime-commands 文件中注册，一是方便用户来查找你增加的命令，二是可以让用户使用CTRL+SHIFT+P的组合键调出“命令面板”，在里面快速检索你注册的命令进行调用。
+    {
+        "id": "tools",
+        "caption": "工具(T)",
+        "mnemonic": "T",         菜单的键盘访问键
+        "children":
+        [
+            { 
+                "command": "open_url", 
+                "args": {"url": "http://damnwidget.github.io/anaconda/anaconda_settings/"}, 
+                "caption": "anaconda文档" 
+            },  
+        ]
+    },
+
+*/
+[   
+    {
+        "caption": "工具(T)",
+        "mnemonic": "T",
+        "id": "tools",
+        "children":
+        []
+    },
+    {
+        "caption": "帮助(C)",
+        "mnemonic": "C",
+        "id": "help",
+        "children":
+        [
+         
+        ]
+    },
+    {
+        "caption": "常用(H)",
+        "mnemonic": "H",
+        "id": "changyong",
+        "children":
+        [          
+            {
+                "command": "open_file", 
+                "args":{"file": "${packages}/Default/Main.sublime-menu",},
+                "caption": "工具栏-系统"
+            },
+            {
+                "command": "open_file", 
+                "args":{"file": "${packages}/ZZZ/Main.sublime-menu",},
+                "caption": "工具栏-系统重载"
+            },  
+            {
+                "command": "open_file", 
+                "args":{"file": "E:/1GitHub/nikolaenv/io.github.sevensky.src/posts/ST3笔记.md",},
+                "caption": "使用笔记"
+            },           
+            { "caption": "-" },
+            {"command": "open_file", "args":{"file": "${packages}/User/Main.sublime-menu",},"caption": "工具栏-用户"},
+            { "caption": "-" },
+            { "command": "build", "caption": "立即编译(B)", "mnemonic": "B" },
+            { "command": "build", "args": {"variant": "Run"}, "caption": "运行(R)","mnemonic": "R" },
+            { "command": "exec", "args": {"kill": true}, "caption": "取消编译(C)", "mnemonic": "C" },
+            { "caption": "-" },
+            {
+                "caption": "单独: 1 个",
+                "command": "set_layout",                
+                "args":{"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]] } 
+            },{
+                "caption": "行数: 2 行",
+                "command": "set_layout",
+                "args":{"cols": [0.0, 1.0], "rows": [0.0, 0.7, 1.0], "cells": [[0, 0, 1, 1], [0, 1, 1, 2]] } 
+            },{
+                "caption": "列数: 2 列",
+                "command": "set_layout",
+                "args": {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]] } 
+            },{
+                        "caption": "列数: 3 列",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.33, 0.66, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+                        }
+                    },
+                    {
+                        "caption": "列数: 4 列",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+                        }
+                    },
+
+                    {
+                "caption": "网格: 4 个",
+                "command": "set_layout",
+                "args":
+                // cells 窗格数组边界[x1, y1, x2, y2]  第四个窗格 x1=1 y1=1 x2=2 y2=2
+                {"cols": [0.0, 0.5, 1.0], "rows": [0.0, 0.5, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2] ] }
+            },
+            { "caption": "-" },
+            { "command": "open_url", "args": {"url": "http://damnwidget.github.io/anaconda/anaconda_settings/"}, "caption": "anaconda文档" },
+            { "command": "open_url", "args": {"url": "http://www.oschina.net/translate/sublime-text-plugin-api-reference"}, "caption": "插件开发API-中文" },
+            { "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/3/api_reference.html"}, "caption": "ST3 API" },
+            { "command": "open_url", "args": {"url": "https://packagecontrol.io/"}, "caption": "packagecontrol.io" },
+            { "command": "open_url", "args": {"url": "http://sublimecodeintel.github.io/SublimeCodeIntel"}, "caption": "SublimeCodeIntel" },           
+            { "command": "open_url", "args": {"url": "https://packagecontrol.io/packages/SublimePythonIDE"}, "caption": "SublimePythonIDE" },           
+            { "caption": "-" },
+        ]
+    }
+    ,
+    {
+        "caption": "译",
+        "command": "youdao_translate" ,
+        "id": "youdao",
+    }
+]
