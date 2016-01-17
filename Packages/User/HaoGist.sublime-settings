@@ -4,8 +4,7 @@
 
     // Workspace to store the gists, if this setting is empty,
     // workspace will be set as {packages_path}/User/HaoGist
-    // "workspace": "E:/1GitHub/GistCache/.GistCache",
-    "workspace": "E:/1GitHub/GistCache/.GistCache",
+    "workspace": "E:/1GitHub/GistCache",
 
     // Browser Path, you should set a valid browser path, otherwise, it will have problem
     // Some policy prevents setting chrome as default browser, so this setting is here

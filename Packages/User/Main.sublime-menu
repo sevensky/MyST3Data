@@ -52,7 +52,12 @@
                 "command": "open_file", 
                 "args":{"file": "${packages}/ZZZ/Main.sublime-menu",},
                 "caption": "工具栏-系统重载"
-            },   
+            },  
+            {
+                "command": "open_file", 
+                "args":{"file": "E:/1GitHub/nikolaenv/io.github.sevensky.src/posts/ST3笔记.md",},
+                "caption": "使用笔记"
+            },           
             { "caption": "-" },
             {"command": "open_file", "args":{"file": "${packages}/User/Main.sublime-menu",},"caption": "工具栏-用户"},
             { "caption": "-" },

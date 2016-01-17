@@ -133,7 +133,7 @@
   // Anaconda
   {"command": "anaconda_goto", "keys": ["f4"]},
   {"command": "anaconda_find_usages", "keys": ["ctrl+alt+f"]},
-  // {"command": "anaconda_doc", "keys": ["f3"]},
+  {"command": "anaconda_doc", "keys": ["f3"]},
   //格式化代码
   {"command": "anaconda_auto_format", "keys": ["ctrl+alt+r"]},
   {"command": "anaconda_goto", "keys": ["g", "d"],

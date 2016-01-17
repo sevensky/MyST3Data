@@ -98,6 +98,9 @@
 	],
 	"index_exclude_patterns":
 	[
+		"E:\\1GitHub\\Python\\pyautogui*",
+		"E:\\1GitHub\\Python\\1firstRead*",
+		"E:\\1GitHub\\Python.DataYes*",
 		"*.log"
 	],
 	"index_files": false,
